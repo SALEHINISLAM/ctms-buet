@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/b0cffcfa44.js" crossorigin="anonymous"></script>
+    <title>CTMS-BUET</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-gray-300 text-black">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt="" class="inline w-6">CTMS-BUET</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Logout</a></li>
+                <!-- add link if needed -->
+                <!-- <li>
+                  <details>
+                    <summary>Parent</summary>
+                    <ul class="bg-white rounded-t-none p-2">
+                      <li><a>Link 1</a></li>
+                      <li><a>Link 2</a></li>
+                    </ul>
+                  </details>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+    </header>
+    <main class="bg-white min-h-screen">
+        <div class="container mx-auto flex flex-col items-center justify-center text-black text-center gap-5 pt-8">
+          <img src="images/cong.png" alt="" srcset="" class="w-1/2 md:h-1/5 lg:max-w-sm">
+          <h1 class="font-bold text-5xl">!!!Congratulations!!!</h1>
+          <p class="font-semibold text-xl">You have successfully submitted your problem. We immediately take action to solve it. Thank you...</p>
+          <button class="btn btn-outline btn-error" id="go-back">Go Back</button>
+        </div>
+    </main>
+</body>
+<script src="js/problem.js"></script>
+</html>

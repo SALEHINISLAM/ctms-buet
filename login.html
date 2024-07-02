@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/b0cffcfa44.js" crossorigin="anonymous"></script>
+  <title>CTMS-BUET</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar bg-white text-black">
+            <div class="flex-1">
+              <a class="btn btn-ghost text-xl"><img src="images/logo.png" alt="" class="inline w-6">CTMS-BUET</a>
+            </div>
+            <div class="flex-none">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+    </header>
+
+    <main class="bg-white">
+        <section>
+            <div
+                class="hero xl:min-h-screen"
+                style="background-image: url(images/banner.webp); ">
+                <div class="hero-overlay bg-opacity-65"></div>
+                    <div class="hero-content text-neutral-content text-center py-16 w-full flex flex-col">
+                        <div class="max-w-full">
+                        <h3 class="text-2xl font-bold text-gray-300">Welcome to</h3>
+                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold  opacity-100 text-white">Central Toilet Management System <br>BUET</h1>
+                        <br>
+                        <i class="fa-solid fa-restroom text-6xl lg:text-8xl text-white"></i>
+                        <p class="mb-5 text-xl text-wrap text-white">
+                            Tell us your problem , We will solve them!
+                        </p>
+                        </div>
+                        <div class=" flex flex-col bg-gray-300 p-8 rounded-xl gap-4">
+                            
+                            <div class="flex flex-col w-full gap-4 lg:flex-row">
+                                <select class="select select-bordered w-full max-w-xs bg-white text-black text-base" id="building" name="entry.864307097">
+                                    <option disabled selected>Which Building?</option>
+                                    <option value="Dr. J. R. C. Civil Building">Dr. J. R. C. Civil Engineering Building</option>
+                                    <option value="M E Building">M. E. Building</option>
+                                    <option value="E C E Building">E. C. E. Building</option>
+                                    <option value="Architecture Building">Architecture Building</option>
+                                    <option value="U.R.P. Building">U. R. P. Building</option>
+                                    <option value="O.A.B. Building">O.A.B. Building</option>
+                                    <option value="Central Library Building">Central Library Building</option>
+                                </select>
+                                <select class="select select-bordered w-full max-w-xs bg-white text-black text-base" id="floor" name="entry.1407030764">
+                                    <option disabled selected>In Which Floor?</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                                <select class="select select-bordered w-full max-w-xs bg-white text-black text-base" id="gender" name="entry.1437054090">
+                                    <option disabled selected>In Which Toilet?</option>
+                                    <option value="Male Toilet">Male Toilet</option>
+                                    <option value="Female Toilet">Female Toilet</option>
+                                </select>
+                                <select class="select select-bordered w-full max-w-xs bg-white text-black text-base" id="problem" name="entry.1404354671">
+                                    <option disabled selected>What is the Problem?</option>
+                                    <option value="There is no Handwash">There is no Handwash</option>
+                                    <option value="Toilet is not Clean">Toilet is not Clean</option>
+                                    <option value="Water tap is not working\functional">Water tap is not working\functional</option>
+                                    <option value="There is no Toilet Tissue">There is no Toilet Tissue</option>
+                                    <option value="Some parts of Toilet get damaged">Some parts of Toilet get damaged</option>
+                                </select>
+                            </div>
+                             <div class="">  
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="btn btn-error text-base font-bold lg:w-1/4 text-white" id="problem-submit-btn" >Submit</button>
+
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+<script src="js/p.js"></script>
+</body>
+</html>
