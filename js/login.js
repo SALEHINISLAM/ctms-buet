@@ -15,6 +15,9 @@ document.getElementById('btn-login').addEventListener('click',function(event){
         // alert('success');
         window.location.href='login.html';
     }
+    else if(studentId.value=='' || userEmail.value==''){
+        alert('Please give required information');
+    }
     else{
         alert('You are not a BUETian.');
     }
